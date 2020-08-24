@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url("images/background.jpg"); 
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.logo{
+	width: 250px;
+	height: 100px;
+	position: absolute;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+.logo img{
+	width: 120px;
+}
+.sidebar{
+	width: 250px;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.6);
+	position: absolute;
+}
+.text-box{
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 45%;
+	text-align: center;
+}
+.text-box h1{
+	font-size: 28px;
+	font-weight: 100;
+}
+.text-box h4{
+	margin: 7px 0 10px;
+}
+.line{
+	width: 80px;
+	height: 1px;
+	margin: auto;
+	background: #000;
+}
+.content{
+	color: #fff;
+	position: absolute;
+	right: 200px;
+	top: 30%;
+	transform: translateY(-50%);
+}
+.content h1{
+	font-size: 100px;
+}
+.content p{
+	font-size: 20px;
+	margin: 10 60 70;
+}
+.btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	padding: 10px 0;
+	background: #000;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.btn img{
+	width: 30px;
+	margin-right: 15px;
+}
+
+#backvideo{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+
+@media (min-aspect-ratio: 16/9){
+	#backvideo{
+		width: 100%;
+		height:auto;
+	}
+}
+@media (max-aspect-ratio: 16/9){
+	#backvideo{
+		width: auto;
+		height: 100%;
+	}
+}
